@@ -10,7 +10,7 @@ from  model import Base, Comentario
 class Servico(Base):
     __tablename__ = 'servico'
 
-    id = Column("pk_servico", Integer, primary_key=True)
+    id = Column("pk_servico", Integer, primary_key=True, autoincrement=True)
     nome = Column(String(140), unique=True)
     tipoDeServico = Column(String(140))
     valorDoServico = Column(Float)
